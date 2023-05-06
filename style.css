@@ -1,0 +1,141 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    margin: 50px auto;
+    background-color: #292d3e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .keypad {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 7px;
+  }
+  
+  .number,
+  .operator,
+  .clear,
+  .reset,
+  .equal,
+  .decimal {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+  }
+  
+  .number:hover,
+  .operator:hover,
+  .clear:hover,
+  .reset:hover,
+  .equal:hover,
+  .decimal:hover {
+    background-color: #555;
+  }
+  
+  .number:active,
+  .operator:active,
+  .clear:active,
+  .reset:active,
+  .equal:active,
+  .decimal:active {
+    box-shadow: inset 0 0 10px #fbff78;
+    transition: box-shadow 0.2s;
+  }
+  
+  .operator {
+    background-color: #ff5f5f;
+  }
+  
+  .operator:hover {
+    background-color: #ff7f7f;
+  }
+  
+  .operator:active {
+    box-shadow: inset 0 0 10px #fbff78;
+    transition: box-shadow 0.2s;
+  }
+  
+  .clear {
+    background-color: #ffae00;
+  }
+  
+  .clear:hover {
+    background-color: #ffc140;
+  }
+  
+  .clear:active {
+    box-shadow: inset 0 0 10px #fbff78;
+    transition: box-shadow 0.2s;
+  }
+  
+  .reset {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 2;
+    background-color: #6c757d;
+  }
+  
+  .reset:hover {
+    background-color: #868e96;
+  }
+  
+  .reset:active {
+    box-shadow: inset 0 0 10px #fbff78;
+    transition: box-shadow 0.2s;
+  }
+  
+  .equal {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 4;
+    height: 190px;
+    background-color: #4ce235;
+  }
+  
+  .equal:hover {
+    background-color: #5cd65c;
+  }
+  
+  .equal:active {
+    box-shadow: inset 0 0 10px #fbff78;
+    transition: box-shadow 0.2s;
+  }
+  
+  .decimal {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+    background-color: #1e90ff;
+  }
+  
+  .decimal:hover {
+    background-color: #4aa3df;
+  }
+  
+  .decimal:active {
+    box-shadow: inset 0 0 10px #fbff78;
+    transition: box-shadow 0.2s;
+  }
